@@ -1,0 +1,12 @@
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93.6vh;
+
+    img {
+        height: 50%;
+        border-radius: 5px;
+        filter: saturate(1.5);
+    }
+}
