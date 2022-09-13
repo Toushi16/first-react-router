@@ -1,0 +1,21 @@
+.link {
+
+    text-decoration: none;
+    color: #d57d1f;
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+    
+        &:hover {
+            color: #E4CB5B;
+        }
+
+    .meal-list-item {
+
+        .thumb {
+            
+            width: 250px;
+            margin-bottom: 5px;
+        }
+    }
+}

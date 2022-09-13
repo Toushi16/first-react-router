@@ -11,9 +11,10 @@ function App() {
       <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path='/' element={ <HomePage /> }/>
-        <Route path='/catalog' element={ <CatalogPage /> }/>
-        <Route path='*' element={ <ErrorPage /> }/>
+        <Route path='/' element={<HomePage />}/>
+        <Route path ='/catalog' element={<HomePage />}/>
+        <Route path='/catalog/:categoryName' element={<CatalogPage />}/>
+        <Route path='*' element={<ErrorPage />}/>
       </Routes>
       </BrowserRouter>
     </div>

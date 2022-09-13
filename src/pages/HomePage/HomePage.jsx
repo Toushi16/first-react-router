@@ -1,9 +1,17 @@
 import './index.scss';
+import { ENDPOINTS } from '../../utils/endpoints.js';
+import { useFetch } from '../../utils/usefetch.js';
+import { CategoryList } from '../../components/CategoryList/CategoryList.jsx';
 
 export const HomePage = () => {
+    const { data, loading, error } = useFetch(ENDPOINTS.CATEGORIES);
+
     return (
         <div className="homepage">
-            <h1 className="homepage-title">Home</h1>
+            {data ? ( <CategoryList categories={ data?.categories ?? [] } />
+            ) : (
+                'An error has occurred!'
+            )}
         </div>
     )
 }

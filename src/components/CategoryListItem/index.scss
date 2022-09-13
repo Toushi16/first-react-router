@@ -1,0 +1,16 @@
+.link {
+    text-decoration: none;
+    color: #d57d1f;
+
+    &:hover {
+        color: #E4CB5B;
+    }
+
+    .category-list-item {
+        
+        .thumb {
+            margin-bottom: 5px;
+            width: 250px;
+        }
+    }
+}
