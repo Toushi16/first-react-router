@@ -7,7 +7,7 @@ export const MealListItem = (props) => {
     return (
         <Link
              className='link'
-             to={`/catalog/${categoryName}/${meal.strMeal}`}
+             to={`/catalog/${categoryName}/${meal.strMeal}/${meal.idMeal}`}
              title={`browse the catalog ${meal.strMeal}`}
         >
         <li className='meal-list-item'>

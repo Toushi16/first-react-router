@@ -1,0 +1,40 @@
+.recipe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 95.2vh;
+    background-color: #2D2013;
+
+    &-name {
+        width: 80vw;
+        padding: 30px;
+        color: white;
+        text-align: center;
+        font-size: 2.5rem;
+        border-bottom: 2px solid white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    &-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+
+        button {
+            background-color: #FFCB66;
+            color: #23180D;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+
+            &:hover {
+                background-color: #FFBB00;
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export const useFetch = (url) => {
+export const useFetch = (url, formatFn=null) => {
     const [ loading, setLoading ] = useState(false);
     const [ data, setData ] = useState(null);
     const [ error, setError ] = useState(null);
@@ -11,6 +11,7 @@ export const useFetch = (url) => {
         fetch(url)
         .then((res) => res.json())
         .then((json) => {
+            typeof formatFn === 'function' ? setData(formatFn(json)) : 
             setData(json);
             setError(false);
         })

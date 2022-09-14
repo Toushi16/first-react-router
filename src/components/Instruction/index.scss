@@ -1,0 +1,22 @@
+.instruction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 80%;
+    height: 75%;
+    border-bottom: 2px solid white;
+
+    &-thumb {
+        height: 450px;
+        border-radius: 5px;
+    }
+
+    &-instr {
+        width: 800px;
+        font-size: 1.5rem;
+        text-align: center;
+        color: whitesmoke;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}

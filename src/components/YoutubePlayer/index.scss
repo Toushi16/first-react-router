@@ -1,0 +1,12 @@
+.youtube-player {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 75%;
+    border-bottom: 2px solid white;
+
+    iframe {
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+}
